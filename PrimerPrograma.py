@@ -1,5 +1,0 @@
-nombre = input("Hola, ingresa tu nombre completo: ")
-edad = int(input("Ingrese su edad: "))
-mes = input("ingrese su mes: ")
-print("Hola, "+nombre)
-print(f"Vi que cumples en {mes} la edad de {edad}")
