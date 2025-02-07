@@ -1,20 +1,20 @@
 import random
 
 #Varibles de vida de los pokemones
-vida_pikachu = 100
-vida_bulbasaur = 100
-vida_actual_pikachu = vida_pikachu
-vida_actual_bulbasaur = vida_bulbasaur
+vida_inicial_pikachu = 100
+vida_inicial_bulbasaur = 100
+vida_actual_pikachu = vida_inicial_pikachu
+vida_actual_bulbasaur = vida_inicial_bulbasaur
 
-while vida_pikachu > 0 and vida_bulbasaur > 0:
+while vida_actual_pikachu > 0 and vida_actual_bulbasaur > 0:
     #Turno de pikachu
     #variables de poder de pikachu
     bola_voltio = 10
     onda_truerno = 11
     num_ramd = random.randint(1,2)
     #calculo de porcentaje de vida de los pokemones
-    porcentaje_vida_bulbasaur = int((vida_actual_bulbasaur * 10) / vida_bulbasaur)
-    porcentaje_vida_pikachu = int((vida_actual_pikachu * 10) / vida_pikachu)
+    porcentaje_vida_bulbasaur = int((vida_actual_bulbasaur * 10) / vida_inicial_bulbasaur)
+    porcentaje_vida_pikachu = int((vida_actual_pikachu * 10) / vida_inicial_pikachu)
 
     #Ataques de pikachu
     print("Turno de Pikachu\n")
@@ -36,8 +36,8 @@ while vida_pikachu > 0 and vida_bulbasaur > 0:
     pistola_de_agua = 12
     burbuja = 9
     seleccion_ataque = None
-    porcentaje_vida_bulbasaur = int((vida_actual_bulbasaur * 10)/vida_bulbasaur)
-    porcentaje_vida_pikachu = int((vida_actual_pikachu * 10)/vida_pikachu)
+    porcentaje_vida_bulbasaur = int((vida_actual_bulbasaur * 10) / vida_inicial_bulbasaur)
+    porcentaje_vida_pikachu = int((vida_actual_pikachu * 10) / vida_inicial_pikachu)
 
     #Ataques de Bulbasaur
     while seleccion_ataque != "A" and seleccion_ataque != "B" and seleccion_ataque != "C":
@@ -67,7 +67,7 @@ while vida_pikachu > 0 and vida_bulbasaur > 0:
         input("Presione Enter para continuar...")
 
 #Comprobacion de si gano uno u el otro
-if vida_actual_pikachu > vida_actual_bulbasaur:
-    print("Pikachu a ganado el combante")
-else:
-    print("Bulbasaur a ganado el combate")
+    if vida_actual_pikachu > vida_actual_bulbasaur:
+        print("Pikachu a ganado el combante")
+    else:
+        print("Bulbasaur a ganado el combate")
