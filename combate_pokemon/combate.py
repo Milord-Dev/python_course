@@ -1,3 +1,4 @@
+import os
 import random
 
 #Varibles de vida de los pokemones
@@ -25,9 +26,11 @@ while vida_actual_pikachu > 0 and vida_actual_bulbasaur > 0:
         vida_actual_bulbasaur -= onda_truerno
         print("Pikachi lanza Onda Trueno\n")
 
-    print(f"La vida de pikachu bajo a: {"#" * porcentaje_vida_pikachu} {vida_actual_pikachu}%\n"
-          f"La vida de bulbasaur bajo a: {"#" * porcentaje_vida_bulbasaur} {vida_actual_bulbasaur}%\n")
-
+    print(f"La vida de pikachu bajo a: [{"#" * porcentaje_vida_pikachu}]"
+          f"{vida_actual_pikachu,vida_inicial_pikachu}%\n"
+          f"La vida de bulbasaur bajo a: [{"#" * porcentaje_vida_bulbasaur}]"
+          f"{vida_actual_bulbasaur, vida_inicial_bulbasaur}%\n")
+    
     input("Presione Enter para continuar...")
 
     #Turno de bulbasaur
@@ -61,8 +64,10 @@ while vida_actual_pikachu > 0 and vida_actual_bulbasaur > 0:
         else:
             print("Seleccione bien")
 
-        print(f"La vida de pikachu bajo a: {"#" * porcentaje_vida_pikachu} {vida_actual_pikachu}%\n"
-              f"La vida de bulbasaur bajo a: {"#" * porcentaje_vida_bulbasaur} {vida_actual_bulbasaur}%\n")
+        print(f"La vida de pikachu bajo a: [{"#" * porcentaje_vida_pikachu}]"
+              f"{vida_actual_pikachu, vida_inicial_pikachu}%\n"
+              f"La vida de bulbasaur bajo a: [{"#" * porcentaje_vida_bulbasaur}]"
+              f"{vida_actual_bulbasaur, vida_inicial_bulbasaur}%\n")
 
         input("Presione Enter para continuar...")
 
