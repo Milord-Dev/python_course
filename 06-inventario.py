@@ -10,14 +10,6 @@ class Producto:
         self.categoria = categoria
     
     #Funciones del producto
-    def estado_producto():
-        pass
-
-    def reponer_stock():
-        pass
-
-    def calcular_precio_producto():
-        pass
 
 #Clase Inventario
 class Inventario:
@@ -25,20 +17,11 @@ class Inventario:
         self.dict_inventario = {}
 
     #Funciones para inventario
-    def agregar_producto():
-        pass
 
-    def buscar_producto():
-        pass
 
-    def mostrar_producto():
-        pass
-
-    def calcular_valor_inventario():
-        pass
-
-    def notificacion_producto():
-        pass
+#Transformacion de las clases a objetos 
+producto = Producto()
+inventario = Inventario()
 
 print("--- Bienvenido a la tiendo basai fantasia --- \n")
 print("Elija una de las opciones: \n")
@@ -59,6 +42,22 @@ while True:
             4.Calcular Inventario
             5.Salir del Programa
         """)
+        if admin_eleccion == "1":
+            inventario.agregar_producto()
+
+        if admin_eleccion == "2":
+            inventario.buscar_producto()
+
+        if admin_eleccion == "3":
+            inventario.mostrar_producto()
+
+        if admin_eleccion == "4":
+            inventario.calcular_valor_inventario()
+
+        if admin_eleccion == "5":
+            print("Saliendo del programa...")
+            sys.exit()
+            break
 
     if interfaz == "2":
         usuario_eleccion = input("""
@@ -68,6 +67,16 @@ while True:
             3.Ver producto disponibles
             4.Salir del Programa
         """)
+        if usuario_eleccion == "1":
+            pass
+        if usuario_eleccion == "2":
+            pass
+        if usuario_eleccion == "3":
+            pass
+        if usuario_eleccion == "4":
+            print("Saliendo del programa...")
+            sys.exit()
+            break
 
     if interfaz == "3":
         print("Saliendo del programa...")
