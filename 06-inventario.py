@@ -18,7 +18,6 @@ class Inventario:
 
     #Funciones para inventario
 
-
 #Transformacion de las clases a objetos 
 producto = Producto()
 inventario = Inventario()
